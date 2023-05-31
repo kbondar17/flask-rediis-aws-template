@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+</head>
+
+<body>
+    <div>The hostname of the container is <b>{{ hostname }}</b> and its IP is <b>{{ ip }}</b>.</div>
+    <div>Version : {{version}}</div>
+    <div>User IP : {{user_ip}}</div>
+    <div>Users who have been here:</div>
+    <ul>
+        {% for user in users %}
+        <li>{{user}}</li>    
+        {% endfor %}
+    </ul>
+
+
+
+</body>
+
+</html>
